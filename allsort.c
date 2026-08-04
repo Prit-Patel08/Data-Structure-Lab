@@ -58,10 +58,16 @@ int main()
 
     if (option == 1) {
         bubble_sort(n, a);
-    } else if (option == 2) {
+    }
+    else if (option == 2) {
         insertion_sort(n, a);
-    } else {
+    }
+    else if (option == 3) {
         selection_sort(n, a);
+    }
+    else {
+        printf("Invalid choice!\n");
+        return 0;
     }
     printf("Sorted Array: ");
     for (int i = 0; i < n; i++) {
