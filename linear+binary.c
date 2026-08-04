@@ -77,7 +77,12 @@ int main()
 
     if (option == 1) {
         linear_search(size, arr);
-    } else {
+    }
+    else if (option == 2) {
         binary_search(size, arr);
+    }
+    else {
+        printf("Invalid choice.\n");
+        return 0;
     }
 }
